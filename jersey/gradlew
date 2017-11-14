@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
-JAVA_HOME=/apps/jdk1.8.0_121/
+echo "**********************************************"
+echo "* Use gradlew_params to set proper JAVA_HOME *"
+echo "**********************************************"
+echo
+[ -f ./gradlew_params ] && . ./gradlew_params || echo "Warning: gradlew_params not found"
 
 ##############################################################################
 ##
