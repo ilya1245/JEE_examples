@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+cd "$(dirname "$0")"
+pwd
+
 echo "**********************************************"
 echo "* Use gradlew_params to set proper JAVA_HOME *"
 echo "**********************************************"
