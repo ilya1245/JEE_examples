@@ -57,10 +57,16 @@
           </execution>
         </executions>
         <configuration>
-          <schemaDirectory>${project.basedir}/src/main/resources/wsdl</schemaDirectory>
+          <schemaDirectory>${project.basedir}/src/main/resources/PFS/F5/com_kingfisher_oagis/9_5_1/Services/WebServices/WSDL</schemaDirectory>
           <schemaIncludes>
             <include>*.wsdl</include>
           </schemaIncludes>
+
+          <bindingDirectory>src/main/resources</bindingDirectory>
+          <bindingIncludes>
+            <include>**/*.xjb</include>
+          </bindingIncludes>
+
         </configuration>
       </plugin>
     </plugins>
